@@ -1,0 +1,14 @@
+НЕ ТУ ПИ
+5000
+Маленький Принц
+11000
+Процесс не может получить доступ к файлу "C:\Users\wolfr\source\repos\Project_WPF_Stap\Project_WPF_Stap\bin\Debug\basket.txt", так как этот файл используется другим процессом.
+11000
+Процесс не может получить доступ к файлу "C:\Users\wolfr\source\repos\Project_WPF_Stap\Project_WPF_Stap\bin\Debug\basket.txt", так как этот файл используется другим процессом.
+11000
+Марсианин
+18000
+Black Sun
+12000
+Приключения Какашки
+10000

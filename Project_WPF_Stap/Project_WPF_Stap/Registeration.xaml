@@ -1,0 +1,30 @@
+﻿<Window x:Class="Project_WPF_Stap.Registeration"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns:local="clr-namespace:Project_WPF_Stap"
+        mc:Ignorable="d"
+        Title="Registeration" Height="600" Width="900">
+    <Grid Background="#403130" Margin="0,0,-0.4,-1.6">
+        <Image Source="img/img1.jpg"></Image>
+        <materialDesign:Snackbar Height="62" x:Name="SnackBar" MessageQueue="{materialDesign:MessageQueue}" Background="red" Margin="147,0,238,0" Width="609"></materialDesign:Snackbar>
+        
+        <Rectangle RadiusX="15" RadiusY="15" Fill="#291d1c" Margin="264,146,246,110"/>
+        <TextBlock FontSize="30" Foreground="White" Text="Welcome to Registeration." Margin="274,146,270,378" RenderTransformOrigin="0.373,0.575"></TextBlock>
+        <TextBlock FontSize="15" Foreground="White" Text="Full Name: " Margin="274,208,528,334"></TextBlock>
+        <TextBox Background="White" x:Name="full_name" Margin="489,199,270,342"/>
+        <TextBlock FontSize="15" Foreground="White" Text="User Name: " Margin="274,244,518,298"></TextBlock>
+        <TextBox Background="White" x:Name="user_name" Margin="489,235,270,307" TextChanged="user_name_TextChanged"/>
+        <TextBlock FontSize="15" Foreground="White" Text="Password: " Margin="274,279,528,260"></TextBlock>
+        <TextBox Background="White" x:Name="pass" Margin="489,270,270,269" TextChanged="pass_TextChanged" />
+        <TextBlock FontSize="15" Foreground="White" Text="Confirm Password: " Margin="274,312,485,230"></TextBlock>
+        <PasswordBox Background="White" x:Name="confirm_pass" Margin="489,308,270,234"/>
+        <TextBlock FontSize="15" Foreground="White" Text="E-mail Address: " Margin="274,342,485,197"></TextBlock>
+        <TextBox Background="White" x:Name="email_add" Margin="489,342,270,197"/>
+
+        <Button Background="#291d1c" Content="Login" x:Name="logins_button" Height="Auto" Margin="274,404,270,120" Click="logins_button_Click"></Button>
+    </Grid>
+</Window>

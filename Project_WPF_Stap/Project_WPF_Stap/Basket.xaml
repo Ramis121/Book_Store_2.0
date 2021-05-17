@@ -1,0 +1,24 @@
+﻿<Window x:Class="Project_WPF_Stap.Basket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_WPF_Stap"
+        mc:Ignorable="d"
+        Title="Basket" Height="450" Width="800">
+    <Grid Background="#403130">
+        <Rectangle RadiusX="15" RadiusY="15" Fill="#291d1c" Margin="0,0,9.6,365"/>
+        <TextBlock Foreground="White" FontSize="30" Text="Different books:" Margin="264,-2,48.6,365"/>
+
+        <ListBox Grid.Column="0" ItemsSource="{Binding categoty_Book}" SelectedItem="{Binding SelectedPhone}" Margin="0,60,-0.4,0">
+            <ListBox.ItemTemplate> 
+                <DataTemplate>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Foreground="White" FontSize="10" Text="{Binding Path=Name_Book}" FontStyle="Italic" ></TextBlock>
+                        <TextBlock Foreground="White" FontSize="10" Text="{Binding Path=Price}" FontStyle="Italic" ></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
